@@ -1,3 +1,15 @@
 @use "./base/base";
 @use "./base/reset";
 @use "./global" as *;
+
+
+.header {
+  position: absolute;
+}
+
+.header_logo {
+ width: 120px;
+ position: absolute ;
+ top: 5%;
+ left: 90%;
+}
