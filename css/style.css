@@ -151,6 +151,11 @@ select::-ms-expand {
   object-fit: cover;
   object-position: 0% 0%;
 }
+@media screen and (max-width: 896px) {
+  .header_img {
+    object-position: 50% 0%;
+  }
+}
 
 .magazine {
   margin: 80px 0;
@@ -177,6 +182,11 @@ select::-ms-expand {
 .magazin_img-group {
   display: flex;
 }
+@media screen and (max-width: 896px) {
+  .magazin_img-group {
+    flex-direction: column;
+  }
+}
 
 .archive_box {
   position: relative;
@@ -195,6 +205,12 @@ select::-ms-expand {
   position: absolute;
   top: 40.5%;
   left: 22%;
+}
+@media screen and (max-width: 896px) {
+  .archive_area {
+    top: 40%;
+    left: 6%;
+  }
 }
 
 .archive-title {
@@ -221,6 +237,12 @@ select::-ms-expand {
   position: absolute;
   top: 40.5%;
   left: 22%;
+}
+@media screen and (max-width: 896px) {
+  .new_area {
+    top: 40%;
+    left: 6%;
+  }
 }
 
 .new-title {

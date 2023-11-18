@@ -21,6 +21,9 @@
   height: 100vh;
   object-fit: cover;
   object-position: 0% 0%;
+  @include mq("lg") {
+object-position: 50% 0%;
+  }
 }
 
 .magazine {
@@ -47,6 +50,9 @@ margin-bottom: 40px;
 
 .magazin_img-group {
   display: flex;  
+  @include mq("lg") {
+flex-direction: column;
+  }
 }
 
 .archive_box {
@@ -67,6 +73,10 @@ background-color: rgb(115,115,115,0.7);
 position: absolute;
 top: 40.5%;
 left: 22%;
+@include mq("lg") {
+  top: 40%;
+  left: 6%;
+}
 }
 
 .archive-title {
@@ -97,6 +107,10 @@ background-color: rgb(115,115,115,0.7);
 position: absolute;
 top: 40.5%;
 left: 22%;
+@include mq("lg") {
+  top: 40%;
+  left: 6%;
+}
 }
 
 .new-title {
