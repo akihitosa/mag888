@@ -21,8 +21,9 @@
   height: 100vh;
   object-fit: cover;
   object-position: 0% 0%;
+
   @include mq("lg") {
-object-position: 50% 0%;
+    object-position: 50% 0%;
   }
 }
 
@@ -31,52 +32,54 @@ object-position: 50% 0%;
 }
 
 .inner {
- max-width: 1200px;
- padding: 0 5%;
- margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
 }
 
 .magazine_title {
-font-size: 24px;
-font-weight: $bold;
-text-align: center;
-margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: $bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .magazine_text {
-text-align: center;
-margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .magazin_img-group {
-  display: flex;  
+  display: flex;
+
   @include mq("lg") {
-flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .archive_box {
-position: relative;
+  position: relative;
 }
 
 .archive_img {
-width: 510px;
-margin-right: 21px;
+  width: 510px;
+  margin-right: 21px;
 }
 
 
 .archive_area {
-width: 290px;
-height: 93px;
-text-align: center;
-background-color: rgb(115,115,115,0.7);
-position: absolute;
-top: 40.5%;
-left: 22%;
-@include mq("lg") {
-  top: 40%;
-  left: 6%;
-}
+  width: 290px;
+  height: 93px;
+  text-align: center;
+  background-color: rgb(115, 115, 115, 0.7);
+  position: absolute;
+  top: 40.5%;
+  left: 22%;
+
+  @include mq("lg") {
+    top: 40%;
+    left: 6%;
+  }
 }
 
 .archive-title {
@@ -84,7 +87,7 @@ left: 22%;
 }
 
 .archive_text {
-color: $white1;
+  color: $white1;
 }
 
 .new_box {
@@ -95,22 +98,21 @@ color: $white1;
   width: 510px;
 }
 
-.magazine_new {
-
-}
+.magazine_new {}
 
 .new_area {
   width: 290px;
-height: 93px;
-text-align: center;
-background-color: rgb(115,115,115,0.7);
-position: absolute;
-top: 40.5%;
-left: 22%;
-@include mq("lg") {
-  top: 40%;
-  left: 6%;
-}
+  height: 93px;
+  text-align: center;
+  background-color: rgb(115, 115, 115, 0.7);
+  position: absolute;
+  top: 40.5%;
+  left: 22%;
+
+  @include mq("lg") {
+    top: 40%;
+    left: 6%;
+  }
 }
 
 .new-title {
@@ -120,3 +122,208 @@ left: 22%;
 .new-text {
   color: $white1;
 }
+
+
+// fafiion
+.fashion {
+  height: 520px;
+  background-color: #F8F8F8;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.fashion_title {
+  padding: 60px 0 20px;
+}
+
+.fashion_text {
+  padding-bottom: 30px;
+}
+
+.fushion_link {
+  padding: 14px 36px;
+  border: 1px solid #2A2A2A;
+  color: $black2;
+}
+
+
+.container {
+  background-color: $glay1;
+  padding: 60px 0;
+}
+
+// catalog
+.catarog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+
+  @include mq("lg") {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+
+.catarog_img_box {
+  width: 48%;
+
+  @include mq("lg") {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+.catalog_box {
+  width: 48%;
+
+  @include mq("lg") {
+    width: 100%;
+
+  }
+}
+
+.catalog_title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.catalog_text {
+  font-size: 0.875rem;
+  padding-bottom: 30px;
+}
+
+// antique
+.antique {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq("lg") {
+    flex-direction: column;
+  }
+}
+
+.antique_box {
+  width: 48%;
+
+  @include mq("lg") {
+    width: 100%;
+  }
+}
+
+.antique_title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.antique_text1 {
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+
+}
+
+.antique_text2 {
+  font-size: 0.875rem;
+  margin-bottom: 60px;
+}
+
+.antique_link_box {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.antique_link {
+  font-size: 0.75rem;
+  color: $black2;
+  border: 1px solid $black3;
+  padding: 13px 36px;
+  text-align: center;
+}
+
+.antique_img_box {
+  width: 48%;
+
+  @include mq("lg") {
+    width: 100%;
+  }
+}
+
+// footer 
+.footer {
+  background-color: $black1;
+  color: $white1;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 336px;
+  @include mq("lg") {
+    height: 436px;
+flex-direction: column;
+  }
+}
+
+.footer_logo_box {
+  @include mq("lg") {
+align-items: center;
+margin-top: 30px;
+  }
+}
+
+
+.footer_logo {
+  width: 120px;
+  @include mq("lg") {
+width: 120px;
+text-align: center;
+  }
+}
+
+
+.footer_list {
+  @include mq("lg") {
+    width: 100%;
+  }
+}
+
+.footer_title {
+  font-size: 1rem;
+  line-height: 1.125;
+}
+
+.footer_ul_list {
+  font-size: 0.75rem;
+  list-style: disc;
+  li {
+    margin-left: 13px;
+    line-height: 2.0;
+  }
+}
+
+.footer_text {
+  width: 29.666%;
+  @include mq("lg") {
+width: 100%;
+margin-bottom: 60px;
+  }
+}
+
+.footer_about {
+  font-size: 0.75rem;
+  line-height: 2.0;
+
+}
+
+.footer_bottom {
+}
+
+.footer_copylite {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.75rem;
+}
+
+
